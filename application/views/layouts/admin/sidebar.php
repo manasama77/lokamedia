@@ -19,8 +19,7 @@
 				</a>
 				<ul class="treeview-menu">
 					<li><a href="<?=site_url();?>admin/carousel/index"><i class="fa fa-picture-o"></i> Carousel</a></li>
-					<li><a href="<?=site_url();?>admin/component/create"><i class="fa fa-plus"></i> Tambah Komponen</a></li>
-					<li><a href="<?=site_url();?>admin/component/index"><i class="fa fa-cogs"></i> List Komponen</a></li>
+					<li><a href="<?=site_url();?>admin/about_us/index"><i class="fa fa-cogs-o"></i> About Us</a></li>
 				</ul>
 			</li>
 

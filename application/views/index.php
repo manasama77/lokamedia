@@ -37,19 +37,7 @@
 	<?php $this->load->view('partials/carousel'); ?>
 
 	<!-- About-->
-	<section class="about-section text-center" id="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 mx-auto">
-					<h2 class="text-dark mb-4">About Us</h2>
-					<p class="text-dark">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta, cumque assumenda culpa maiores omnis totam obcaecati voluptas eligendi sapiente enim debitis illo dolore facilis in, nihil perspiciatis et perferendis recusandae esse asperiores quas. Magnam at quia minima soluta explicabo nulla commodi quo dignissimos inventore temporibus, voluptatum praesentium unde a.
-					</p>
-				</div>
-			</div>
-			<img class="img-fluid" src="assets/img/ipad.png" alt="" />
-		</div>
-	</section>
+	<?php $this->load->view('partials/about_us'); ?>
 
 	<!-- OUR SERVICES-->
 	<section class="service-section bg-light" id="service">

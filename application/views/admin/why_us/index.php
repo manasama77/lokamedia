@@ -21,19 +21,19 @@
 						</div>
 					<?php } ?>
 
-					<form action="<?=site_url();?>admin/about_us/update" method="post" enctype="multipart/form-data">
+					<form action="<?=site_url();?>admin/why_us/update" method="post" enctype="multipart/form-data">
 						<div class="form-group">
 							<label for="title">Judul</label>
-							<input type="text" class="form-control" id="title" name="title" value="<?=$title_about_us;?>" required>
+							<input type="text" class="form-control" id="title" name="title" value="<?=$title_data;?>" required>
 						</div>
 						<div class="form-group">
 							<label for="content">Content</label>
-							<textarea class="form-control" id="content" name="content" rows="10" required><?=$content_about_us;?></textarea>
+							<textarea class="form-control" id="content" name="content" rows="10" required><?=$content_data;?></textarea>
 						</div>
 						<div class="form-group">
 							<label for="content">Photo</label>
 							<input type="file" class="form-control" id="foto" name="foto">
-							<img id="preview" src="<?=base_url();?>assets/img/about_us/<?=$photo_about_us;?>" alt="Photo" class="img-responsive" />
+							<img id="preview" src="<?=base_url();?>assets/img/why_us/<?=$photo_data;?>" alt="Photo" class="img-thumbnail img-responsive" style="width: 204px; height: auto; margin-top: 10px;" />
 						</div>
 						<div class="form-group">
 							<button type="submit" class="btn btn-primary btn-block">Update</button>

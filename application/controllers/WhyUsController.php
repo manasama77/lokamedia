@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class AboutUsController extends CI_Controller {
+class WhyUsController extends CI_Controller {
 
-	private $table = 'about_us';
+	private $table = 'why_us';
 
 	public function __construct()
 	{
@@ -13,14 +13,14 @@ class AboutUsController extends CI_Controller {
 
 	public function index()
 	{
-		$data['title']   = 'About Us';
-		$data['content'] = 'about_us/index';
-		$data['vitamin'] = 'about_us/index_vitamin';
+		$data['title']   = 'Why Us';
+		$data['content'] = 'why_us/index';
+		$data['vitamin'] = 'why_us/index_vitamin';
 		$exec            = $this->mcore->get($this->table, '*', NULL, NULL, 'ASC');
 
-		$data['title_about_us']   = $exec->row()->title;
-		$data['content_about_us'] = $this->br2nl($exec->row()->content);
-		$data['photo_about_us']   = $exec->row()->photo;
+		$data['title_data']   = $exec->row()->title;
+		$data['content_data'] = $this->br2nl($exec->row()->content);
+		$data['photo_data']   = $exec->row()->photo;
 
 		$this->template->template($data);
 	}
@@ -31,7 +31,7 @@ class AboutUsController extends CI_Controller {
 		$content = $this->nl2br2(trim($this->input->post('content')));
 
 		if($_FILES['foto']['size'] > 0){
-			$config['upload_path']      = 'assets/img/about_us/';
+			$config['upload_path']      = 'assets/img/why_us/';
 			$config['file_ext_tolower'] = TRUE;
 			$config['allowed_types']    = ['jpg', 'png'];
 
@@ -57,7 +57,7 @@ class AboutUsController extends CI_Controller {
 			$exec   = $this->mcore->update($this->table, $object, $where);
 		}
 
-		$config['upload_path']      = 'assets/img/about_us/';
+		$config['upload_path']      = 'assets/img/why_us/';
 		$config['file_ext_tolower'] = TRUE;
 		$config['allowed_types']    = ['jpg', 'png'];
 
@@ -75,7 +75,7 @@ class AboutUsController extends CI_Controller {
 			$exec   = $this->mcore->update($this->table, $object, $where);
 		}
 
-		redirect('admin/about_us/index');
+		redirect('admin/why_us/index');
 	}
 
 	public function nl2br2($string) {
@@ -90,5 +90,5 @@ class AboutUsController extends CI_Controller {
 
 }
 
-/* End of file AboutUsController.php */
-/* Location: ./application/controllers/AboutUsController.php */
+/* End of file WhyUsController.php */
+/* Location: ./application/controllers/WhyUsController.php */

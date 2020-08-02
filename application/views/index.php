@@ -11,7 +11,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
 	<link href="<?=base_url();?>assets/css/styles.css" rel="stylesheet" />
+	<link href="<?=base_url();?>vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+	<link href="<?=base_url();?>vendor/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 </head>
 <body id="page-top">
 
@@ -25,8 +28,8 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Us</a></li>
-					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#service">Our Services</a></li>
 					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#why">Why Us</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#service">Our Services</a></li>
 					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
 				</ul>
 			</div>
@@ -36,102 +39,15 @@
 	<!-- Carousel -->
 	<?php $this->load->view('partials/carousel'); ?>
 
-	<!-- About-->
+	<!-- About -->
 	<?php $this->load->view('partials/about_us'); ?>
 
-	<!-- OUR SERVICES-->
-	<section class="service-section bg-light" id="service">
-		<div class="container">
-			<!-- SERVICE 1 -->
-			<div class="row align-items-center no-gutters mb-4 mb-lg-5">
-				<div class="col-12 mb-5">
-					<h2>Our Services</h2>
-				</div>
-				<div class="col-xl-7 col-lg-7">
-					<img class="img-fluid mb-3 mb-lg-0" src="assets/img/001-desktop.png" alt="" />
-				</div>
-				<div class="col-xl-5 col-lg-5">
-					<div class="featured-text text-center text-lg-left">
-						<h4>Dekstop Development</h4>
-						<p class="text-black mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quia deserunt temporibus quidem nihil laboriosam saepe ipsum voluptates incidunt nemo.</p>
-					</div>
-				</div>
-			</div>
+	<!-- Why Us -->
+	<?php $this->load->view('partials/why_us'); ?>
 
-			<!-- SERVICE 2 -->
-			<div class="row justify-content-center no-gutters mb-5">
-				<div class="col-lg-5 mt-1 mb-1 mr-lg-3">
-					<img class="img-fluid" src="assets/img/002-script.png" alt="" />
-				</div>
-				<div class="col-lg-6">
-					<div class="bg-black text-center h-100 project">
-						<div class="d-flex h-100">
-							<div class="service-text w-100 my-auto text-center text-lg-left">
-								<h4 class="text-white">Web Development</h4>
-								<p class="mb-0 text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, molestias in commodi quisquam a neque modi ducimus debitis cumque quam.</p>
-								<hr class="d-none d-lg-block mb-0 ml-0" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- SERVICE 3 -->
-			<div class="row justify-content-center no-gutters mb-5">
-				<div class="col-lg-5 mt-1 mb-1 ml-lg-3">
-					<img class="img-fluid" src="assets/img/003-cross-platform.png" alt="" />
-				</div>
-				<div class="col-lg-6 order-lg-first">
-					<div class="bg-black text-center h-100 project">
-						<div class="d-flex h-100">
-							<div class="service-text w-100 my-auto text-center text-lg-right">
-								<h4 class="text-white">Mobile Development (IOS & ANDROID)</h4>
-								<p class="mb-0 text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam excepturi laboriosam architecto explicabo laborum tempora nesciunt odit sint natus amet.</p>
-								<hr class="d-none d-lg-block mb-0 mr-0" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- SERVICE 4 -->
-			<div class="row justify-content-center no-gutters mb-5">
-				<div class="col-lg-5 mt-1 mb-1 mr-lg-3">
-					<img class="img-fluid" src="assets/img/004-ui-design.png" alt="" />
-				</div>
-				<div class="col-lg-6">
-					<div class="bg-black text-center h-100 project">
-						<div class="d-flex h-100">
-							<div class="service-text w-100 my-auto text-center text-lg-right">
-								<h4 class="text-white">UI/UX</h4>
-								<p class="mb-0 text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat provident, sequi hic est, molestiae iste totam in minus delectus quibusdam?</p>
-								<hr class="d-none d-lg-block mb-0 mr-0" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- SERVICE 5 -->
-			<div class="row justify-content-center no-gutters mb-5">
-				<div class="col-lg-5 mt-1 mb-1 ml-lg-3">
-					<img class="img-fluid" src="assets/img/005-digital-marketing.png" alt="" />
-				</div>
-				<div class="col-lg-6 order-lg-first">
-					<div class="bg-black text-center h-100 project">
-						<div class="d-flex h-100">
-							<div class="service-text w-100 my-auto text-center text-lg-right">
-								<h4 class="text-white">Digital Marketing</h4>
-								<p class="mb-0 text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, facilis explicabo omnis nesciunt quos voluptatum obcaecati quam cupiditate quia recusandae.</p>
-								<hr class="d-none d-lg-block mb-0 mr-0" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</section>
+	<!-- OUR SERVICES -->
+	<?php $this->load->view('partials/our_services'); ?>
+	
 
 	<!-- WHY US -->
 	<section class="projects-section bg-dark" id="why">
@@ -215,6 +131,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 	<script src="<?=base_url();?>assets/js/scripts.js"></script>
+	<script src="<?=base_url();?>vendor/owlcarousel/owl.carousel.min.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script>
 		var swiper = new Swiper('.swiper-container', {
@@ -235,6 +152,27 @@
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
+		});
+
+		$(document).ready(() => {
+			$(".owl-carousel").owlCarousel({
+				items: 5,
+				margin: 3,
+				autoWidth: false,
+				responsiveClass:true,
+				center: true,
+				loop: true,
+				nav: true,
+				animateOut: 'slideOutDown',
+    			animateIn: 'flipInX',
+    			stagePadding: 30,
+    			smartSpeed: 450,
+				dots: true,
+				lazyLoad: true,
+				autoplay: true,
+				autoplayTimeout: 5000,
+				autoplayHoverPause: false,
+			});
 		});
 	</script>
 </body>

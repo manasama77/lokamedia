@@ -25,6 +25,10 @@ $route['admin/carousel/destroy']       = 'CarouselController/destroy';
 $route['admin/about_us/index']  = 'AboutUsController/index';
 $route['admin/about_us/update'] = 'AboutUsController/update';
 
+$route['admin/why_us/index']  = 'WhyUsController/index';
+$route['admin/why_us/update'] = 'WhyUsController/update';
+
+$route['admin/our_services/index']  = 'OurServicesController/index';
 
 # UTILITY
 

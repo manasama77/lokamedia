@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class AboutUsController extends CI_Controller {
+class OurServicesController extends CI_Controller {
 
 	private $table = 'about_us';
 
@@ -13,7 +13,7 @@ class AboutUsController extends CI_Controller {
 
 	public function index()
 	{
-		$data['title']   = 'About Us';
+		$data['title']   = 'Our Services';
 		$data['content'] = 'about_us/index';
 		$data['vitamin'] = 'about_us/index_vitamin';
 		$exec            = $this->mcore->get($this->table, '*', NULL, NULL, 'ASC');
@@ -90,5 +90,5 @@ class AboutUsController extends CI_Controller {
 
 }
 
-/* End of file AboutUsController.php */
-/* Location: ./application/controllers/AboutUsController.php */
+/* End of file OurServicesController.php */
+/* Location: ./application/controllers/OurServicesController.php */

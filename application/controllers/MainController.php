@@ -7,6 +7,7 @@ class MainController extends CI_Controller {
 	{
 		$data['carousel'] = $this->mcore->get('carousel', '*', NULL, 'sequence', 'ASC');
 		$data['about_us'] = $this->mcore->get('about_us', '*', NULL, NULL, 'ASC');
+		$data['why_us']   = $this->mcore->get('why_us', '*', NULL, NULL, 'ASC');
 		$this->load->view('index', $data);
 	}
 

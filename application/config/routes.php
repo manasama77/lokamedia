@@ -29,6 +29,13 @@ $route['admin/why_us/index']  = 'WhyUsController/index';
 $route['admin/why_us/update'] = 'WhyUsController/update';
 
 $route['admin/our_services/index']  = 'OurServicesController/index';
+$route['admin/our_services/store']  = 'OurServicesController/store';
+$route['admin/our_services/update'] = 'OurServicesController/update';
+$route['admin/our_services/delete'] = 'OurServicesController/delete';
+$route['admin/our_services/show']   = 'OurServicesController/show';
+
+$route['admin/contact/index']  = 'ContactController/index';
+$route['admin/contact/update'] = 'ContactController/update';
 
 # UTILITY
 

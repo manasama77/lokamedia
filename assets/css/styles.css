@@ -10372,6 +10372,11 @@
  	text-transform: uppercase;
  	letter-spacing: 0.15rem;
  }
+ .contact-section .card h5 {
+ 	font-size: 0.7rem;
+ 	font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+ 	letter-spacing: 0.10rem;
+ }
  .contact-section .card hr {
  	border-color: #ffcc00;
  	border-width: 0.25rem;
@@ -10425,4 +10430,8 @@
  	-ms-flex-align: center;
  	-webkit-align-items: center;
  	align-items: center;
+ }
+
+ .img-logo {
+ 	width: 150px;
  }

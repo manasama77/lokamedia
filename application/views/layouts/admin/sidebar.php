@@ -19,9 +19,10 @@
 				</a>
 				<ul class="treeview-menu">
 					<li><a href="<?=site_url();?>admin/carousel/index"><i class="fa fa-picture-o"></i> Carousel</a></li>
-					<li><a href="<?=site_url();?>admin/about_us/index"><i class="fa fa-cogs-o"></i> About Us</a></li>
-					<li><a href="<?=site_url();?>admin/why_us/index"><i class="fa fa-cogs-o"></i> Why Us</a></li>
-					<li><a href="<?=site_url();?>admin/our_services/index"><i class="fa fa-cogs-o"></i> Our Services</a></li>
+					<li><a href="<?=site_url();?>admin/about_us/index"><i class="fa fa-cog"></i> About Us</a></li>
+					<li><a href="<?=site_url();?>admin/why_us/index"><i class="fa fa-cog"></i> Why Us</a></li>
+					<li><a href="<?=site_url();?>admin/our_services/index"><i class="fa fa-cog"></i> Our Services</a></li>
+					<li><a href="<?=site_url();?>admin/contact/index"><i class="fa fa-cog"></i> Contact</a></li>
 				</ul>
 			</li>
 

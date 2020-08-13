@@ -98,7 +98,7 @@
 			$(".owl-carousel").owlCarousel({
 				items: 7,
 				margin: 3,
-				autoWidth: true,
+				autoWidth: false,
 				responsiveClass: true,
 				center: true,
 				loop: true,

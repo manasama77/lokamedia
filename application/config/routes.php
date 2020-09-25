@@ -8,6 +8,7 @@ $route['translate_uri_dashes'] = FALSE;
 $route['init'] = 'InitController/index';
 
 $route['login'] = 'LoginController/index';
+$route['logout'] = 'LoginController/logout';
 
 
 $route['admin/dashboard'] = 'DashboardController/index';

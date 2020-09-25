@@ -35,7 +35,7 @@
 							</p>
 						</li>
 						<li class="user-footer">
-							<a href="<?=site_url();?>logout/admin" class="btn btn-danger btn-block" style="color: #000 !important;"><i class="fa fa-sign-out"></i> Sign out</a>
+							<a href="<?=site_url();?>logout" class="btn btn-danger btn-block" style="color: #000 !important;"><i class="fa fa-sign-out"></i> Sign out</a>
 						</li>
 					</ul>
 				</li>

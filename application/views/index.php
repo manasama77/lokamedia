@@ -8,14 +8,14 @@
 	<meta name="description" content="<?= APP_DESCRIPTION; ?>" />
 	<title>LOKAMEDIA</title>
 	<link rel="icon" type="image/x-icon" href="<?= base_url(); ?>assets/img/favicon.ico" />
-	<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
 	<link href="<?= base_url(); ?>assets/css/styles.css" rel="stylesheet" />
 	<link href="<?= base_url(); ?>vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 	<link href="<?= base_url(); ?>vendor/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+	<link rel="stylesheet" href="<?= base_url(); ?>assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="<?=base_url();?>assets/css/animate.min.css" />
+	<link rel="stylesheet" href="<?=base_url();?>vendor/font-awesome/css/font-awesome.min.css" />
 	<style type="text/css" media="screen">
 		html {
 			scroll-behavior: smooth;
@@ -66,13 +66,13 @@
 	<footer class="footer bg-black small text-center text-white-50">
 		<div class="container">Copyright © Loka Media 2020</div>
 	</footer>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<script src="<?=base_url();?>vendor/jquery/dist/jquery.min.js"></script>
+	<script src="<?=base_url();?>vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="<?=base_url();?>assets/js/jquery.easing.1.3.js"></script>
 	<script src="<?= base_url(); ?>assets/js/scripts.js"></script>
 	<script src="<?= base_url(); ?>assets/js/smoothscroll.js"></script>
 	<script src="<?= base_url(); ?>vendor/owlcarousel/owl.carousel.min.js"></script>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="<?= base_url(); ?>assets/js/swiper-bundle.min.js"></script>
 	<script>
 		var swiper = new Swiper('.swiper-container', {
 			speed: 2000,
